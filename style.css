@@ -1,0 +1,314 @@
+/* ============================================================
+   style.css — Folha de Estilos Global do SGC
+   Sistema Gerador de Currículo
+   Disciplina: Desenvolvimento para Web II
+   ============================================================ */
+
+/* --- Reset básico: remove margens e paddings padrão do navegador --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* inclui borda e padding no tamanho total */
+}
+
+/* --- Estilo base do corpo da página --- */
+body {
+    font-family: Times New Roman, serif; /* fonte legível e universal */
+    background-color: #f4f6f8;      /* fundo cinza claro suave */
+    color: #333333;                 /* texto escuro para boa legibilidade */
+    font-size: 17px;
+    line-height: 1.6;   
+            /* espaçamento entre linhas confortável */
+}
+
+
+
+.menu-navegacao {
+    display: flex; /* Organiza os itens lado a lado */
+    justify-content: flex-start; /* Alinha todo o conteúdo à esquerda */
+    align-items: center; /* Centraliza os itens verticalmente */
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    padding: 10px 20px;
+}
+
+.menu-navegacao .logo {
+    width: 120px; /* Defina o tamanho ideal para sua imagem */
+    margin-right: auto; /* Empurra os próximos itens (a lista) para a direita */
+}
+
+.menu-navegacao ul {
+    display: flex;
+    list-style: none; /* Remove as bolinhas da lista */
+    gap: 20px; /* Espaçamento entre os links */
+    margin: 0;
+    padding: 0;
+}
+
+.menu-navegacao ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+
+.div-logo {
+  float: left;
+  width: 50px; /* Ajuste o valor conforme necessário */
+  height: auto; /* Mantém a proporção automática */
+}
+
+
+
+
+#botao-refresh {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+}
+
+#botao-refresh:hover {
+            background-color: #0056b3;
+}
+
+#estilo-curriculo {
+  justify-content: center; /* Centraliza na horizontal */
+  align-items: center;    /* Centraliza na vertical */
+
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* inclui borda e padding no tamanho total */
+}
+
+/* --- Cabeçalho principal do sistema --- */
+header {
+    background-color: #2c3e50;      /* azul escuro institucional */
+    color: #ffffff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+     text-align: center;
+}
+
+.logo {
+    width: 100px; /* Ajuste o valor conforme necessário */
+    height: auto; /* Mantém a proporção automática */
+    display: block;
+    margin: 0 auto; 
+
+}
+
+
+
+header p {
+    font-size: 0.95em;
+    color: #bdc3c7;                 /* subtítulo em cinza claro */
+    margin-top: 5px;
+    
+}
+
+/* --- Barra de navegação --- */
+nav {
+    background-color: #34495e;      /* tom ligeiramente mais claro que o header */
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;                      /* espaço entre os links */
+    flex-wrap: wrap;                /* quebra linha em telas pequenas */
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 0.95em;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;    /* animação suave ao passar o mouse */
+}
+
+nav a:hover {
+    background-color: #2980b9;      /* destaque azul ao passar o mouse */
+}
+
+/* --- Área de conteúdo principal --- */
+main {
+    max-width: 960px;               /* largura máxima para boa leitura */
+    margin: 30px auto;              /* centraliza horizontalmente */
+    padding: 0 20px;
+}
+
+/* --- Caixa de conteúdo (container genérico) --- */
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* sombra sutil */
+    margin-bottom: 20px;
+}
+
+/* --- Títulos de seção --- */
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2980b9; /* linha azul decorativa */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+h3 {
+    color: #34495e;
+    margin: 15px 0 8px;
+    font-size: 1.1em;
+}
+
+/* --- Estilo de tabelas (listagem de candidatos) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;      /* remove espaço entre bordas */
+    margin-top: 15px;
+}
+
+table thead {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+table th, table td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid #dde1e7;
+}
+
+table tbody tr:hover {
+    background-color: #eaf2fb;      /* destaque ao passar o mouse na linha */
+}
+
+/* --- Botões e links de ação --- */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between; /* Separa os elementos */
+  align-items: right;
+}
+
+
+/*.botao-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Efeito ao passar o mouse */
+  .botao-link:hover {
+    background-color: #0056b3;
+  }
+
+.btn:hover { opacity: 0.85; }
+
+.btn-primary   { background-color: #2980b9; color: #fff; } /* ação principal */
+.btn-success   { background-color: #27ae60; color: #fff; } /* salvar/confirmar */
+.btn-warning   { background-color: #f39c12; color: #fff; } /* editar */
+.btn-danger    { background-color: #e74c3c; color: #fff; } /* excluir */
+.btn-secondary { background-color: #95a5a6; color: #fff; } /* voltar/cancelar */
+
+/* --- Formulários --- */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #2980b9;          /* borda azul ao focar no campo */
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;               /* permite redimensionar apenas verticalmente */
+    min-height: 80px;
+}
+
+/* --- Mensagens de feedback (sucesso e erro) --- */
+.msg-sucesso {
+    background-color: #d5f5e3;
+    border-left: 4px solid #27ae60;
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: #1e8449;
+    margin-bottom: 20px;
+}
+
+.msg-erro {
+    background-color: #fadbd8;
+    border-left: 4px solid #e74c3c;
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: #922b21;
+    margin-bottom: 20px;
+}
+
+/* --- Seção do currículo formatado --- */
+.curriculo-secao {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.curriculo-secao:last-child {
+    border-bottom: none; /* remove linha do último item */
+}
+
+/* --- Rodapé --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    font-size: 0.85em;
+    margin-top: 40px;
+}

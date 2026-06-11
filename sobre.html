@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- UTF-8: suporte a acentos e caracteres especiais -->
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <!-- viewport: página responsiva em mobile -->
+
+  <title>SGC — Sistema Gerador de Currículo</title>
+
+  <!-- Vincula a folha de estilos externa -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO DO SISTEMA -->
+  <header>
+    <a href="index.html"><img src="logo-SGC-2.1.png" alt="Logo do Site" class="logo"></a>
+  </header>
+
+  <!-- BARRA DE NAVEGAÇÃO -->
+  <!-- Cada link aponta para uma funcionalidade -->
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="cadastro.html">Novo Candidato</a>
+    <a href="listar_candidatos.php">
+      Listar Candidatos
+    </a>
+  </nav>
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA 'SOBRE'-->
+  <main>
+    <!-- SOBRE O SGC -->
+    <div class="container">
+      <h2>Bem-vindo ao SGC</h2>
+      <p><strong>O SGC (Sistema Gerador de Currículos)</strong> é uma ferramenta digital que permite gerar seu currículo de forma rápida, bonita e gratuita. O Sistema tem como objetivo ajudar você a criar um currículo profissional e conciso.
+
+      Sabemos que conseguir um emprego ou mudar de carreira pode ser difícil, e muitas vezes a parte mais complicada é colocar no papel ou em um arquivo digital tudo o que a gente sabe fazer. O SGC foi criado justamente para resolver isso. Com campos simples e objetivos, captura suas informações profissionaispara montar um currículo organizado e pronto para você baixar.
+
+      <h2>Nosso Propósito e Filosofia</h2>
+      <h3>Propósito</h3>
+      Abrir as portas do mercado de trabalho para todo mundo, transformando o esforço e a história de cada pessoa em um currículo que chama a atenção dos patrões e recrutadores.
+
+      <h3>A filosofia do SGC é simples:</h3> Não importa onde você aprendeu ou o que você estudou, o seu trabalho tem valor. Por esta razão, não deixe de deixar claro o seu objetivo e de informar sua visão do emprego ao qual está almejando ou se candidatando.
+
+      Seja você um profissional com faculdade, alguém com curso técnico, um jovem em busca do primeiro emprego, ou alguém que aprendeu tudo na prática do dia a dia, o <strong>SGC</strong> valoriza a sua caminhada. Nosso objetivo é garantir que nenhuma oportunidade seja perdida só porque o currículo não estava bem formatado.
+      <h3>Vamos iniciar seu futuro!</h3>
+      <h3><a href="cadastro.html" class='btn btn-primary'>Crie seu currículo agora mesmo!</a></h3>
+    </p>
+
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <!-- Utiliza o script abaixo para buscar o ano atual -->
+    <p>&copy; <span id="anoAtual"></span> — SGC — PEAR Sistemas de Informação S.A.
+  </br>
+    Todos os direitos reservados.</p>
+
+<script>
+    //busca o ano atual com a função Date()
+    document.getElementById("anoAtual").innerHTML = new Date().getFullYear();
+</script>
+
+  </footer>
+
+</body>
+</html>

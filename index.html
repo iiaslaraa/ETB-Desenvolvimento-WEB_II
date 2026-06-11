@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- UTF-8: suporte a acentos e caracteres especiais -->
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <!-- viewport: página responsiva em mobile -->
+
+  <title>SGC — Sistema Gerador de Currículo</title>
+
+  <!-- Vincula a folha de estilos externa -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO DO SISTEMA -->
+  <header>  
+
+    <a href="index.html"><img src="logo-SGC-2.1.png" alt="Logo do Site" class="logo"></a>
+
+  </header>
+
+  <!-- BARRA DE NAVEGAÇÃO -->
+  <!-- Cada link aponta para uma funcionalidade -->
+  <nav class='nav-bar'>
+    <a href="index.html">Início</a>
+    <a href="cadastro.html">Novo Candidato</a>
+    <a href="listar_candidatos.php">
+      Listar Candidatos
+    </a>
+    <a href="sobre.html">
+      Sobre o SGC
+    </a>
+  </nav>
+    <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <div class="container">
+      <h2>Bem-vindo ao SGC</h2>
+      <p>O <strong>SGC</strong> permite cadastrar
+      candidatos e gerar currículos formatados
+      automaticamente a partir do Banco de Dados MariaDB do MySQL.</p>
+
+      <!-- Cards de acesso rápido em tabela -->
+      <table style="border:none;">
+        <tr>
+          <td style="border:none;">
+            <div class="container">
+              <h3>Cadastrar</h3>
+              <p>Adicione um novo candidato.</p>
+              <!-- Botão estilizado via CSS -->
+              <a href="cadastro.html"
+                 class="btn btn-primary">
+                Novo Cadastro
+              </a>
+            </div>
+          </td>
+          <td style="border:none;">
+            <div class="container">
+              <h3>Listar</h3>
+              <p>Veja todos os candidatos.</p>
+              <a href="listar_candidatos.php"
+                 class="btn btn-primary">
+                Ver Candidatos
+              </a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+<!-- RODAPÉ -->
+<footer>
+    <!-- Utiliza o script abaixo para buscar o ano atual -->
+    <p>&copy; <span id="anoAtual"></span> — SGC — Disciplina: Desenvolvimento para Web II
+  </br>
+    Todos os direitos reservados.</p>
+
+<script>
+    //busca o ano atual com a função Date()
+    document.getElementById("anoAtual").innerHTML = new Date().getFullYear();
+</script>
+
+</footer>
+
+</body>
+</html>
