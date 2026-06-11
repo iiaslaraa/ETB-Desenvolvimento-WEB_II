@@ -1,0 +1,14 @@
+function gerarPDF() {
+    
+    const elemento = document.getElementById('curriculo-conteudo');
+    
+    const opcoes = {
+        margin:       0,
+        filename:     'curriculo_mariana_alencar.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, useCORS: true }, // Escala 2 garante nitidez na impressão
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+        html2pdf().set(opcoes).from(elemento).save();
+}
